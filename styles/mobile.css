@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+/* I noticed that the browser prefers to load the static fonts instead of the variable one, ...*/
+/*... even though my browser supports variable fonts. If we comment the font-face rules above...*/
+/*... the browser efectively loads the variable font. I wonder why, is it because of the file size?*/
+@supports (font-variation-settings: normal){
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter-VariableFont_slnt_wght.ttf') format("truetype supports variations"),
+            url('../fonts/Inter-VariableFont_slnt_wght.ttf') format("truetype-variations");
+        font-weight: 400 700;
+        font-style: normal;
+    }
+}
+
+:root{
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram1: hsl(37, 97%, 70%);
+    --instagram2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+
+    --dark-theme-toggle1: hsl(210, 78%, 56%);
+    --dark-theme-toggle2: hsl(146, 68%, 55%);
+
+    --light-theme-toggle: hsl(230, 22%, 74%);
+
+    --darktheme-background: hsl(230, 17%, 14%);
+    --darktheme-BG-top-pattern: hsl(232, 19%, 15%);
+    --darktheme-card-BG: hsl(228, 28%, 20%);
+    --darktheme-text: hsl(228, 34%, 66%);
+
+    --lighttheme-BG-top-patter: hsl(225, 100%, 98%);
+    --lighttheme-card-BG: hsl(227, 47%, 96%);
+    --lighttheme-dark-text: hsl(228, 12%, 44%);
+    --lighttheme-darker-text: hsl(230, 17%, 14%);
+
+    --font: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font);
+    font-size: 1.4rem;
+}
