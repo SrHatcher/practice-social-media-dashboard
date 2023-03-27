@@ -15,75 +15,193 @@
 <body>
 
   <main>
-    <header>
-      <div>
-        <h1>Social Media Dashboard</h1>
-        <span>Total Followers: 23,004</span>
+    <header class="main__header">
+      <div class="header__title__container">
+        <h1 class="header__title">Social Media Dashboard</h1>
+        <span class="header__subtitle">Total Followers: 23,004</span>
       </div>
 
-      <div>
-        <span>Dark Mode</span>
-        <label>
-          <input type="checkbox" aria-label="darkmode checkbox">
-          <span></span>
+      <div class="header__darkmode_container">
+        <span class="header__darkmode_text">Dark Mode</span>
+        <label class="header__darkmode_input">
+          <input type="checkbox" class="switch__input" aria-label="darkmode checkbox">
+          <span class="switch__span"></span>
         </label>
       </div>
     </header>
 
-    <section>
+    <div class="main__generalOverview">
 
-      <div>
-        <div>
-          <span>logo</span>
-          <span>@nathanf</span>
+      <div class="generalOverview__card card__facebook">
+        <div class="generalOverview__name_container">
+          <span class="card__social_icon facebook"></span>
+          <span class="generalOverview__name">@nathanf</span>
         </div>
-        <span>1987</span>
-        <span>FOLLOWERS</span>
-        <div>
-          <span>icon</span>
-          <span>12 Today</span>
+        <span class="generalOverview__amount">1987</span>
+        <span class="generalOverview__type">FOLLOWERS</span>
+        <div class="card__performance_container">
+          <span class="card__performance_icon increase"></span>
+          <span class="card__performance_text increase__text">12 Today</span>
         </div>
       </div>
 
-      <div>
-        <div>
-          <span>logo</span>
-          <span>@nathanf</span>
+      <div class="generalOverview__card card__twitter">
+        <div class="generalOverview__name_container">
+          <span class="card__social_icon twitter"></span>
+          <span class="generalOverview__name">@nathanf</span>
         </div>
-        <span>1044</span>
-        <span>FOLLOWERS</span>
-        <div>
-          <span>icon</span>
-          <span>99 Today</span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span>logo</span>
-          <span>@realnathanf</span>
-        </div>
-        <span>11k</span>
-        <span>FOLLOWERS</span>
-        <div>
-          <span>icon</span>
-          <span>1099 Today</span>
+        <span class="generalOverview__amount">1044</span>
+        <span class="generalOverview__type">FOLLOWERS</span>
+        <div class="card__performance_container">
+          <span class="card__performance_icon increase"></span>
+          <span class="card__performance_text increase__text">99 Today</span>
         </div>
       </div>
 
-      <div>
-        <div>
-          <span>logo</span>
-          <span>Nathan F.</span>
+      <div class="generalOverview__card card__instagram">
+        <div class="generalOverview__name_container">
+          <span class="card__social_icon instagram"></span>
+          <span class="generalOverview__name">@realnathanf</span>
         </div>
-        <span>8239</span>
-        <span>SUBSCRIBERS</span>
-        <div>
-          <span>icon</span>
-          <span>144 Today</span>
+        <span class="generalOverview__amount">11k</span>
+        <span class="generalOverview__type">FOLLOWERS</span>
+        <div class="card__performance_container">
+          <span class="card__performance_icon increase"></span>
+          <span class="card__performance_text increase__text">1099 Today</span>
         </div>
       </div>
 
+      <div class="generalOverview__card card__youtube">
+        <div class="generalOverview__name_container">
+          <span class="card__social_icon youtube"></span>
+          <span class="generalOverview__name">Nathan F.</span>
+        </div>
+        <span class="generalOverview__amount">8239</span>
+        <span class="generalOverview__type">SUBSCRIBERS</span>
+        <div class="card__performance_container">
+          <span class="card__performance_icon decrease"></span>
+          <span class="card__performance_text decrease__text">144 Today</span>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="main__todayOverview">
+      <h2 class="todayOverview__title">Overview - Today</h2>
+
+      <!--we might have to use a container for all these cards later-->
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Page Views</span>
+          <span class="card__social_icon facebook"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">87</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon increase"></span>
+            <span class="card__performance_text increase__text">3%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Likes</span>
+          <span class="card__social_icon facebook"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">52</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon decrease"></span>
+            <span class="card__performance_text decrease__text">2%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Likes</span>
+          <span class="card__social_icon instagram"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">5462</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon increase"></span>
+            <span class="card__performance_text increase__text">2257%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Profile Views</span>
+          <span class="card__social_icon instagram"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">52k</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon increase"></span>
+            <span class="card__performance_text increase__text">1375%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Retweets</span>
+          <span class="card__social_icon twitter"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">117</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon increase"></span>
+            <span class="card__performance_text increase__text">303%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Likes</span>
+          <span class="card__social_icon twitter"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">507</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon increase"></span>
+            <span class="card__performance_text increase__text">553%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Likes</span>
+          <span class="card__social_icon youtube"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">107</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon decrease"></span>
+            <span class="card__performance_text decrease__text">19%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="todayOverview__card card">
+        <div class="card__header_container">
+          <span class="card__title">Total Views</span>
+          <span class="card__social_icon youtube"></span>
+        </div>
+        <div class="card__data_container">
+          <span class="card__amount">1407</span>
+          <div class="card__performance_container">
+            <span class="card__performance_icon decrease"></span>
+            <span class="card__performance_text decrease__text">12%</span>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
   </main>
